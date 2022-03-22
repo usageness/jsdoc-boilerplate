@@ -1,51 +1,25 @@
-/**
- * Represents a book.
- * @constructor
- * @param {string} title - The title of the book.
- * @param {string} author - The author of the book.
- */
-function Book(title, author) {}
+/** Class representing a VendingMachine. */
+class VendingMachine {
+    /**
+     * vendingMachine 클래스 생성
+		 * 따뜻한 아메리카노, 아이스 아메리카노는 기본값으로 생성되어 있다.
+     */
+    constructor() {
+        // ...
+		}
 
-/**
- * Both of these will link to the bar function.
- * @see {@link bar}
- * @see bar
- */
-function foo() {}
+    /**
+     * 투입 금액에 따라 커피를 구입하는 메서드.
+     */
+    getItem(charge) {
+        // ...
+    }
 
-// Use the inline {@link} tag to include a link within a free-form description.
-/**
- * @see {@link foo} for further information.
- * @see {@link http://github.com|GitHub}
- */
-function bar() {}
-
-/**
- * Generic dairy product.
- * @constructor
- */
-function DairyProduct() {}
-
-/**
- * Check whether the dairy product is solid at room temperature.
- * @abstract
- * @return {boolean}
- */
-DairyProduct.prototype.isSolid = function () {
-	throw new Error('must be implemented by subclass!');
-};
-
-/**
- * Cool, refreshing milk.
- * @constructor
- * @augments DairyProduct
- */
-function Milk() {}
-
-/**
- * Check whether milk is solid at room temperature.
- * @return {boolean} Always returns false.
- */
-Milk.prototype.isSolid = function () {
-	return false;
-};
+    /**
+     * 커피를 구입했을때 콘솔 메시지를 출력하는 메서드.
+		 * 인자로 item 객체를 받습니다.
+     */
+    displayPurchaseMessage(item) {
+        // ...
+    }
+}
